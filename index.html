@@ -6,6 +6,21 @@
         <style>
             a {
                 color:black;
+                text-decoration: none;
+            }
+            #active{
+                color: red;
+            }
+            .saw{
+                color: gray;
+                text-align: left;
+            }
+            h1{
+                font-size: 50px;
+                text-align: center;
+            }
+            body{
+                background-color: white;
             }
         </style>
     </head>
@@ -13,9 +28,12 @@
         <p>
         <h1><strong>Web 공부</strong></h1>
         <ul>
-          <li><a href="1.html">소개</a></li>
+          <li><a href="1.html" class="saw">html</a></li>
+          <li><a href="1.html" class="saw" id="active">css</a></li>
         </ul>
-        <img src = "battle.jpg" width="500">
+        </p>
+        <p>
+            web 기초 공부 시작 2021-04-17
         </p>
         <p> <!--무료 댓글 지원 (disqus)-->
             <div id="disqus_thread"></div>
