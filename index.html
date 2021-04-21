@@ -8,42 +8,49 @@
                 color:black;
                 text-decoration: none;
             }
-            #active{
-                color: red;
-            }
-            .saw{
-                color: gray;
-                text-align: left;
-            }
             h1{
                 font-size: 50px;
                 text-align: center;
+                border-bottom:1px solid black;
+                margin:0;
+                padding:20px;
+            }
+            ul{
+                border-right:1px solid black;
+                width:100px;
+                margin:0;
+                padding:20px;
+            }
+            body{
+                margin:0;
+            }
+            #grid{
+                display: grid;
+                grid-template-columns:150px 1fr;
+            }
+            #grid ul{
+                padding-left:30px;
+            }
+            #article{
+                padding-left:25px;
             }
         </style>
     </head>
     <body>
-        <p>
+        
         <h1><strong>Web 공부</strong></h1>
+        <div id="grid">
         <ul>
-          <li><a href="1.html" class="saw">html</a></li>
-          <li><a href="1.html" class="saw" id="active">css</a></li>
+          <li><a href="1.html">html</a></li>
+          <li><a href="1.html">css</a></li>
           <li>JavaScript</li>
         </ul>
-        </p>
+        <div id="article">
+            <h2>web 기초 공부 시작 2021-04-17</h2>
         <p>
-            web 기초 공부 시작 2021-04-17
+            안녕하세요!!
         </p>
-        <p> <!--무료 댓글 지원 (disqus)-->
-            <div id="disqus_thread"></div>
-<script>
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://https-kokoi1211-github-io-web1.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </p>
+        </div>    
+    </div>
     </body>
 </html>
